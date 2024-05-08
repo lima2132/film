@@ -1,81 +1,107 @@
 "use strict";
 
-// const hamburger = 5;
-// const fries = 1;
-
-// if (hamburger && fries) {
-//   console.log('Я сыт!');
+// while (num < 55){
+//   console.log(num);
+//   num++;
 // }
 
-// const hamburger = 3;
-// const fries = 1;
-// const cola = 1;
+// do {
+//   console.log(num);
+//   num++;
+// }
+// while (num < 55);
 
-// console.log(hamburger === 3 && cola && fries);
+// let result = '';
+// let lenght = 7;
 
-// console.log(1 && 0);
-// console.log(5 && 1);
-// console.log(5 && null);
-// console.log(0 && "gdgds");
+// for (let i = 1; i < lenght; i++) {
+//   for (let j = 0; j < i; j++) {
+//     result += "*";
+//   }
 
-// const hamburger = 3;
-// const fries = 3;
-// const cola = 0;
-// const nuggets = 2;
-
-// if (hamburger === 3 && cola === 2 || fries === 3 && nuggets) {
-//   console.log("Все довольны");
-// } else {
-//   console.log("мы уходим");
+//   result += "\n";
 // }
 
-// let johnReport,
-//   alexReport,
-//   samReport,
-//   mariaReport = "done";
+// console.log(result);
 
-// console.log(johnReport || alexReport || samReport || mariaReport);
-
-// console.log(NaN || 2 || undefined);
-
-// console.log(NaN && 2 && undefined);
-
-// console.log(1 && 2 && 3);
-
-// console.log((!1 && 2) || !3);
-
-// console.log(25 || (null && !3));
-
-// console.log(NaN || null || !3 || undefined || 5);
-
-// console.log(NaN || (null && !3 && undefined) || 5);
-
-// console.log((5 === 5 && 3 > 1) || 5);
-
-// const hamburger = 3;
-// const fries = 3;
-// const cola = 0;
-// const nuggets = 2;
-
-// if ((hamburger === 3 && cola) || (fries === 3 && nuggets)) {
-//   console.log("Done!");
+// let i = 2;
+// while (i <= 16) {
+//   if (i % 2 === 0) {
+//     continue;
+//     i++;
+//   } else {
+//     console.log(i);
+//   }
 // }
 
-// let hamburger;
-// const fries = NaN;
-// const cola = 0;
-// const nuggets = 2;
+const numberOfFilms = +prompt("сколько фильмов вы уже посмотрели?", "");
+const personalMovieBD = {
+  count: numberOfFilms,
+  movies: {},
+  actors: {},
+  genres: [],
+  privat: false,
+};
+ 
+//цикл For
+ 
+// for (let i = 0; i < 2; i++) {
+//   const a = prompt("Один из просмотренных фильмов?", ""),
+//     b = prompt("На сколько оцените его?", "");
 
-// if (hamburger || cola || fries === 3 || nuggets) {
-//   console.log("Done!");
+//   if (a != null && b != null && a != "" && b != "" && a.length < 50) {
+//     personalMovieBD.movies[a] = b;
+//     console.log("done");
+//   } else {
+//     console.log("error");
+//     i--;
+//   }
 // }
 
-// let hamburger;
-// const fries = NaN;
-// const cola = 0;
-// const nuggets = 2;
+//Цикл While
 
+// let i = 0;
+// while (i < 2){
+//     const a = prompt("Один из просмотренных фильмов?", ""),
+//     b = prompt("На сколько оцените его?", "");
 
-// if (hamburger && cola || fries === 3 && nuggets) {
-//    console.log('Done!')
+//   if (a != null && b != null && a != "" && b != "" && a.length < 50) {
+//     personalMovieBD.movies[a] = b;
+//     console.log("done");
+//   } else {
+//     console.log("error");
+//     i--;
+//   }
+//   i++;
 // }
+
+//Цикл do
+
+let i = 0;
+do {
+  const a = prompt("Один из просмотренных фильмов?", ""),
+    b = prompt("На сколько оцените его?", "");
+
+  if (a != null && b != null && a != "" && b != "" && a.length < 50) {
+    personalMovieBD.movies[a] = b;
+    console.log("done");
+  } else {
+    console.log("error");
+    i--;
+  }
+  i++;
+}while(i < 2);
+
+
+
+console.log(personalMovieBD);
+
+if (personalMovieBD.count <= 10) {
+  console.log("Просмоиренно довольно мало фильмов");
+} else if (personalMovieBD.count > 10 && personalMovieBD.count < 30) {
+  console.log("Вы клсический зритель");
+} else if (personalMovieBD.count >= 30) {
+  console.log("Вы киноман");
+} else {
+  console.log("Ошибка");
+}
