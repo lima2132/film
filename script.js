@@ -1,54 +1,81 @@
 "use strict";
 
-// if (1) {
-//   console.log("OK!");
-// } else {
-//   console.log("error");
+// const hamburger = 5;
+// const fries = 1;
+
+// if (hamburger && fries) {
+//   console.log('Я сыт!');
 // }
 
-// if (num < 49) {
-//   console.log("error");
-// } else if (num > 100) {
-//   console.log("много");
+// const hamburger = 3;
+// const fries = 1;
+// const cola = 1;
+
+// console.log(hamburger === 3 && cola && fries);
+
+// console.log(1 && 0);
+// console.log(5 && 1);
+// console.log(5 && null);
+// console.log(0 && "gdgds");
+
+// const hamburger = 3;
+// const fries = 3;
+// const cola = 0;
+// const nuggets = 2;
+
+// if (hamburger === 3 && cola === 2 || fries === 3 && nuggets) {
+//   console.log("Все довольны");
 // } else {
-//   console.log("ok");
+//   console.log("мы уходим");
 // }
 
-// num == 50 ? console.log("ok") : console.log("error");
+// let johnReport,
+//   alexReport,
+//   samReport,
+//   mariaReport = "done";
 
-const num = 50;
-switch (num) {
-  case 49:
-    console.log("Неверно");
-    break;
-  case 100:
-    console.log("Неверно");
-    break;
-  case 51:
-    console.log("верно");
-    break;
-  default:
-    console.log("не в этот раз");
-    break;
-}
+// console.log(johnReport || alexReport || samReport || mariaReport);
+
+// console.log(NaN || 2 || undefined);
+
+// console.log(NaN && 2 && undefined);
+
+// console.log(1 && 2 && 3);
+
+// console.log((!1 && 2) || !3);
+
+// console.log(25 || (null && !3));
+
+// console.log(NaN || null || !3 || undefined || 5);
+
+// console.log(NaN || (null && !3 && undefined) || 5);
+
+// console.log((5 === 5 && 3 > 1) || 5);
+
+// const hamburger = 3;
+// const fries = 3;
+// const cola = 0;
+// const nuggets = 2;
+
+// if ((hamburger === 3 && cola) || (fries === 3 && nuggets)) {
+//   console.log("Done!");
+// }
+
+// let hamburger;
+// const fries = NaN;
+// const cola = 0;
+// const nuggets = 2;
+
+// if (hamburger || cola || fries === 3 || nuggets) {
+//   console.log("Done!");
+// }
+
+// let hamburger;
+// const fries = NaN;
+// const cola = 0;
+// const nuggets = 2;
 
 
-// const numberOfFilms = +prompt("сколько фильмов вы уже посмотрели?" , '');
-
-// const personalMovieBD = {
-//   count: numberOfFilms,
-//   movies: {},
-//   actors: {},
-//   genres: [],
-//   privat: false,
-// };
-
-// const a = prompt('Один из просмотренных фильмов?', ''),
-//       b = prompt('На сколько оцените его?', ''),
-//       c = prompt('Один из просмотренных фильмов?', ''),
-//       d = prompt('На сколько оцените его?', '');
-
-//       personalMovieBD.movies[a] = b;
-//       personalMovieBD.movies[c] = d;
-
-//       console.log(personalMovieBD);
+// if (hamburger && cola || fries === 3 && nuggets) {
+//    console.log('Done!')
+// }
